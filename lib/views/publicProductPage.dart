@@ -1,3 +1,4 @@
+import 'package:craftBus/views/ChatBotPage.dart';
 import 'package:craftBus/views/customerAccountPage.dart';
 import 'package:craftBus/views/productPreviewPage.dart';
 import 'package:craftBus/views/shoppingCartPage.dart';
@@ -1051,6 +1052,8 @@ class PublicProductPage extends StatelessWidget {
         // TODO: ADD BOT FUNCTIONALITY ON BUTTON CLICK (USER SHOULD BE NAVIGATED TO ANOTHER PAGE(CHATBOT PAGE.))
         onPressed: () {
           print('Action Button Pressed');
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => ChatBotPage()));
         },
         child: Container(
           height: 60,
